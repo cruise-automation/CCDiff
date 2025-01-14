@@ -22,7 +22,7 @@ setup(
     packages=[package for package in find_packages() if package.startswith("ccdiff")],
     install_requires=[
         "networkx==2.8.8",
-        "torch==1.13.1",
+        "torch==2.2.0",
         "torchvision==0.14.1",
     ],
     eager_resources=["*"],
