@@ -32,14 +32,32 @@ The core structure of this repo is as follows:
 
 ```shell
 git clone https://github.com/cruise-automation/CCDiff.git
-cd CCDiff
+conda create -n ccdiff python=3.8
 
-# install ccdiff
+# Install third-party dependencies
+cd CCDiff/third_party
+
+# Install trajdata
+git clone https://github.com/AIasd/trajdata.git
+cd trajdata
+pip install -r trajdata_requirements.txt
 pip install -e .
 
-# install customized version of tbsim
-cd third_party/tbsim
+# Install Pplan
+cd ..
+git clone https://github.com/NVlabs/spline-planner.git Pplan
+cd Pplan
 pip install -e .
+
+# Install customized version of tbsim
+cd ../tbsim
+pip install -r requirements.txt
+pip install -e .
+
+# Install ccdiff
+cd ../../
+pip install -e .
+
 ```
 #### Training and Evaluation
 

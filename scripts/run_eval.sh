@@ -14,7 +14,7 @@ step=5
 
 python ccdiff/examples/scene_editor.py   --results_root_dir debug/ --num_scenes_per_batch 1  \
     --dataset_path /mnt/disks/sdb/nuscenes   --env trajdata  \
-    --policy_ckpt_dir "ccdiff_trained_models copy/train/run0/" \
+    --policy_ckpt_dir "ccdiff_trained_models/train/run0/" \
     --policy_ckpt_key iter10_ep0_valLoss16.87.ckpt --eval_class CCDiff  \
     --editing_source 'config' 'heuristic'  --registered_name 'trajdata_nusc_ccdiff' \
     --render --part_control --controllable_agent ${controllable_agent} \

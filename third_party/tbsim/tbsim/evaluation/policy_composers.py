@@ -12,13 +12,13 @@ from tbsim.utils.batch_utils import batch_utils
 from tbsim.configs.registry import get_registered_experiment_config
 from tbsim.utils.config_utils import get_experiment_config_from_file
 from tbsim.policies.hardcoded import (
-    ReplayPolicy,
     GTPolicy,
     GTPolicyOpenLoop,
     GTNaNPolicy,
 )
 from ccdiff.policies.hierarchical import (
-    CCDiffHybridPolicyControl
+    CCDiffHybridPolicyControl,
+    ReplayPolicy
 )
 
 from tbsim.configs.base import ExperimentConfig
