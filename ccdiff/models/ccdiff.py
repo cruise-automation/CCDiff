@@ -37,7 +37,8 @@ from .diffuser_helpers import (
 from .scenetemporal import SceneTransformer
 from .temporal import TemporalMapUnet
 import tbsim.dynamics as dynamics
-from tbsim.utils.guidance_loss import verify_guidance_config_list, verify_constraint_config, apply_constraints, DiffuserGuidance, PerturbationGuidance, PartialPerturbationGuidance
+from tbsim.utils.guidance_loss import verify_guidance_config_list, verify_constraint_config, apply_constraints, DiffuserGuidance
+from ccdiff.utils.guidance_loss import PerturbationGuidance, PartialPerturbationGuidance
 from trajdata.utils.arr_utils import angle_wrap
 from tbsim.utils.trajdata_utils import extract_data_batch_for_guidance
 

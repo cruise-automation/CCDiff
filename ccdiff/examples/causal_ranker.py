@@ -69,7 +69,7 @@ def causal_ranking(causal_graph, topK = 10):
 if __name__ == '__main__': 
     # parse the initial layout relationships
     import joblib
-    scene_idx = joblib.load("0_scene_idx.pkl")
+    scene_idx = joblib.load("data/0_scene_idx.pkl")
     filepath = "data/gt_results/scene_edit_eval/matrix/"
     topK = 10
 
